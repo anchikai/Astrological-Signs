@@ -1,0 +1,3 @@
+<costumes anm2root="gfx/characters/">
+	<costume id="5" anm2path="ceres.anm2" type="passive" hasOverlay="true" hasSkinAlt="false" />
+</costumes>
