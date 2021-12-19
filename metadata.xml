@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Astrological Signs</name>
+    <directory>astrological signs</directory>
+    <id>2500898099</id>
+    <description>This is a mod that adds six new astrology themed items to the game! Three treasure and three planetarium. Let's get into what the items do.
+
+[h1]Ophiuchus[/h1]
++0.4 Tears up, +0.3 Damage up, +1 Soul Heart, and tears move in waves and are spectral.
+
+[h1]Chiron[/h1]
++0.2 Speed up. Entering a new floor will give a random mapping effect. Entering a boss room will trigger a random book effect.
+
+[h1]Juno[/h1]
++1 Soul Heart. Tears that hit an enemy have a chance to chain down the nearest enemy for 5 seconds, preventing them from moving.
+
+[h1]Pallas[/h1]
+Tears bounce off the floor after floating for a short time, cause splash damage on every bounce, and increases tear size by 20%.
+
+[h1]Ceres[/h1]
++0.5 Damage up. Tears that hit an enemy have a chance to cause the player to produce green creep. Enemies that walk over that creep will be slowed and a tentacle will attack them, and enemies attacked by the tentacle will be slowed.
+
+[h1]Vesta[/h1]
++50% Damage up. Tears become extremely small, spectral and slightly transparent. Tears will split into 4-12 or more tears.
+
+
+[h1]Item Pools[/h1]
+Treasure Room - Ophiuchus, Chiron, Juno
+Planetarium - Pallas, Ceres, Vesta
+
+
+[b]Includes full EID and Encyclopedia support[/b]
+
+Special thanks to Kotry for providing spanish translations for EID and [b]HUGE[/b] thanks to Losfrail for helping me for almost a week straight come up with reworks for and tweak Astrological Signs!</description>
+    <version>1.4</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Items"/>
+    <tag id="Graphics"/>
+</metadata>
