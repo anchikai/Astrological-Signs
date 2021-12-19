@@ -1,0 +1,9 @@
+<items gfxroot="gfx/items/" version="1" deathanm2="gfx/death items.anm2">
+	<!-- Astrological Signs -->	<!-- Rework Concepts by Losfrail! -->
+	<passive id="1" cache="tearflag damage firedelay" name="Ophiuchus" description="The dream that holds together" gfx="ophiuchus.png" soulhearts="2" quality="2" tags="stars tearsup offensive" />
+	<passive id="2" cache="speed" name="Chiron" description="The wisest and justest" gfx="chiron.png" tags="syringe book offensive" quality="3" tags="stars offensive" />
+	<passive id="3" name="Juno" description="Ruler of Everything" gfx="juno.png" soulhearts="4" quality="4" tags="stars offensive" />
+	<passive id="4" cache="tearflag" name="Pallas" description="Weathered by time" gfx="pallas.png" quality="3" />
+	<passive id="5" cache="tearflag damage" name="Ceres" description="It shimmers with life..." gfx="ceres.png" quality="4" />
+	<passive id="6" cache="tearflag damage tearcolor" name="Vesta" description="Faintly visible to the naked eye" gfx="vesta.png" quality="3" />
+</items>
