@@ -7,9 +7,11 @@ A mod that adds six new astrology themed items to The Binding of Isaac: Repentan
 - EID Suppport
 - Encyclopedia Support
 
-### Supported Languages
-- **English** (Default)
-- **Spanish** ((by Kotry) With EID)
+
+## Supported Languages (With EID)
+- **English**
+- **Spanish**
+- **Russian**
 
 
 ## Special Thanks to
