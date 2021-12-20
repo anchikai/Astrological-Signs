@@ -13,5 +13,6 @@ A mod that adds six new astrology themed items to The Binding of Isaac: Repentan
 
 
 ## Special Thanks to
-- Kotry for creating the Spanish translations
+- Kotry for providing the Spanish translations
+- BrakeDue for providing the Russian translations
 - Losfrail for helping with complete item rework ideas
