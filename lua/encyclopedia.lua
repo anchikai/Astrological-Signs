@@ -37,11 +37,13 @@ local Wiki = {
 			{str = "Effect", fsize = 2, clr = 3, halign = 0},
 			{str = "Gives the player +0.5 Damage up."},
 			{str = "Tears that hit an enemy have a chance to cause the player to produce a special green creep."},
+			{str = "Chance increases by 5% for each luck up you have. 5% at 0 luck, 30% at 5 luck, etc."},
 			{str = "Enemies that walk over the special green creep will be slowed and a tentacle will attack them."},
 			{str = "Enemies will be slowed while being attacked by the tentacle."},
 		},
 		{ -- Notes
 			{str = "Notes", fsize = 2, clr = 3, halign = 0},
+			{str = "Ceres tears will be fired 50% of the time at 9 luck or higher."},
 			{str = "The creep will last for 3 seconds."},
 			{str = "The tentacle will stay until you leave the room."},
 			{str = "The tentacle may also appear if the player takes damage while producing the special creep."},
@@ -72,12 +74,12 @@ local Wiki = {
 		{ -- Effect
 			{str = "Effect", fsize = 2, clr = 3, halign = 0},
 			{str = "Tears that hit an enemy have a chance to chain down the nearest enemy for 5 seconds, which prevents the chained enemy from acting."},
-			{str = "The chance for an enemy to be chained down is based on your tear rate."},
-			{str = "The chance for an enemy to be chained down at base fire rate is 5%."},
+			{str = "Chance increases by 2% for each luck up you have. 2% at 0 luck, 12% at 5 luck, etc."},
+			{str = "Once an enemy is chained, the effect will not proc again for 10 seconds Once the 10 seconds have passed, the item can chain an enemy again."},
 		},
 		{ -- Notes
 			{str = "Notes", fsize = 2, clr = 3, halign = 0},
-			{str = "Once your tear rate surpasses 30, the chance for an enemy to be chained down will always be 0.5%."},
+			{str = "At 12 luck or higher, the chance for an enemy to be chained down will always be 25%."},
 		},
 		{ -- Credits
 			{str = "Credits", fsize = 2, clr = 3, halign = 0},
@@ -89,7 +91,8 @@ local Wiki = {
 			{str = "Effect", fsize = 2, clr = 3, halign = 0},
 			{str = "Gives the player +50% Damage up and spectral tears."},
 			{str = "Isaac's tears will become extremely small and slightly transparent."},
-			{str = "Isaac's tears will split into 4-12 or more tears."},
+			{str = "Isaac's tears have a chance to split into 4 tears."},
+			{str = "Chance increases by 10% for each luck up you have. 10% at 0 luck, 60% at 5 luck, etc."},
 		},
 		{ -- Notes
 			{str = "Notes", fsize = 2, clr = 3, halign = 0},
@@ -104,7 +107,8 @@ local Wiki = {
 }
 
 Encyclopedia.AddItem({
-	Class = "Furtherance",
+	ModName = "Astrological Signs",
+	Class = "Astrological Signs",
 	ID = CollectibleType.COLLECTIBLE_OPHIUCHUS,
 	WikiDesc = Wiki.Ophiuchus,
 	Pools = {
@@ -115,7 +119,8 @@ Encyclopedia.AddItem({
 })
 
 Encyclopedia.AddItem({
-	Class = "Furtherance",
+	ModName = "Astrological Signs",
+	Class = "Astrological Signs",
 	ID = CollectibleType.COLLECTIBLE_CHIRON,
 	WikiDesc = Wiki.Chiron,
 	Pools = {
@@ -126,7 +131,8 @@ Encyclopedia.AddItem({
 })
 
 Encyclopedia.AddItem({
-	 Class = "Furtherance",
+	ModName = "Astrological Signs",
+	Class = "Astrological Signs",
 	ID = CollectibleType.COLLECTIBLE_JUNO,
 	WikiDesc = Wiki.Juno,
 	Pools = {
@@ -137,7 +143,8 @@ Encyclopedia.AddItem({
 })
 
 Encyclopedia.AddItem({
-	Class = "Furtherance",
+	ModName = "Astrological Signs",
+	Class = "Astrological Signs",
 	ID = CollectibleType.COLLECTIBLE_PALLAS,
 	WikiDesc = Wiki.Pallas,
 	Pools = {
@@ -146,7 +153,8 @@ Encyclopedia.AddItem({
 })
 
 Encyclopedia.AddItem({
-	Class = "Furtherance",
+	ModName = "Astrological Signs",
+	Class = "Astrological Signs",
 	ID = CollectibleType.COLLECTIBLE_CERES,
 	WikiDesc = Wiki.Ceres,
 	Pools = {
@@ -155,7 +163,8 @@ Encyclopedia.AddItem({
 })
 
 Encyclopedia.AddItem({
-	Class = "Furtherance",
+	ModName = "Astrological Signs",
+	Class = "Astrological Signs",
 	ID = CollectibleType.COLLECTIBLE_VESTA,
 	WikiDesc = Wiki.Vesta,
 	Pools = {

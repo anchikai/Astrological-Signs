@@ -2,8 +2,11 @@ local mod = AstrologicalSigns
 
 function mod:GetVesta(player, cacheFlag)
 	if player:HasCollectible(CollectibleType.COLLECTIBLE_VESTA) then
-		if cacheFlag & CacheFlag.CACHE_TEARFLAG == CacheFlag.CACHE_TEARFLAG then
-			player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL | TearFlags.TEAR_SPLIT | TearFlags.TEAR_QUADSPLIT
+		local rng = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_VESTA)
+		if rng:RandomInt(100)+1 <= player.Luck*10+10 then
+			if cacheFlag & CacheFlag.CACHE_TEARFLAG == CacheFlag.CACHE_TEARFLAG then
+				player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL | TearFlags.TEAR_QUADSPLIT
+			end
 		end
 		if cacheFlag & CacheFlag.CACHE_DAMAGE == CacheFlag.CACHE_DAMAGE then
 			player.Damage = player.Damage * 1.5
@@ -23,9 +26,8 @@ function mod:tearSize(EntityTear)
     elseif (player and player:HasCollectible(CollectibleType.COLLECTIBLE_VESTA)) then
 		local sprite = EntityTear:GetSprite()
 		EntityTear.Scale = EntityTear.Scale * 0
-		sprite:Load("gfx/vesta_tears.anm2")
+		sprite:Load("gfx/vesta_tears.anm2", true)
 		sprite:ReplaceSpritesheet(0, "gfx/vesta_tears.png")
-		sprite:LoadGraphics()
 		sprite:Play("Rotate0", true) -- thanks @Connor#2143!
     end
 end
